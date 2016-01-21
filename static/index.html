@@ -23,8 +23,8 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1><strong>Sky Liang</strong></h1>
+			<p><em>Computer Science</em> &middot; <em>A.I.(ArtIficial Intelligence)</em> &middot; <em>Hololens</em></p>
 			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
 		</div>
 
@@ -35,55 +35,84 @@
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<div class="project" id="project1">
 			<a href="" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
+				<img src="images/hololens.jpg" alt="Lorem Pixel image" class="img">
+				<p><strong>Holoens</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project2">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
+				<img src="images/ai.jpg" alt="AI image">
+				<p><strong>A.I.(ArtIficial Intelligence)</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project3">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
+				<img src="images/facebook.jpg" alt="Lorem Pixel image">
+				<p><strong>My Facebook</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project4">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
+				<img src="images/weibo.jpg" alt="Lorem Pixel image">
+				<p><strong>My Weibo</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project5">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
+				<img src="images/sun.jpg" alt="Lorem Pixel image">
+				<p><strong>Sun</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project6">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
+				<img src="images/sunset.jpg" alt="Lorem Pixel image">
+				<p><strong>Sunset</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project7">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
+				<img src="images/flower.jpg" alt="Lorem Pixel image">
+				<p><strong>Flower</strong></p>
 			</a>
 		</div>
 		<div class="project" id="project8">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
+				<img src="images/mountain.jpg" alt="Lorem Pixel image">
+				<p><strong>Mountain</strong></p>
 			</a>
 		</div>
 	</div>
+	
+<form id="projectForm" role="form">
+    <div class="form-group">
+      <label for="project">Please change the project:</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Hololens</option>
+        <option value="#project2">A.I.(ArtIficial Intelligence)</option>
+        <option value="#project3">My facebook</option>
+        <option value="#project4">My Weibo</option>
+        <option value="#project5">Sun</option>
+        <option value="#project6">Sunset</option>
+        <option value="#project7">Flower</option>
+        <option value="#project8">Mountain</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="width">To width (in pixels):</label>
+      <input type="number" class="form-control" id="width" placeholder="Width">
+    </div>
+    
+    <div class="form-group">
+      <label for="description">And to description:</label>
+      <input type="text" class="form-control" id="description" placeholder="Project desicription">
+    </div>
+    
+    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+  </form>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
 </body>
 </html>
